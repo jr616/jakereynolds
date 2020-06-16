@@ -612,9 +612,9 @@ section {
   width: 48px;
   height: 48px;
   position: absolute;
-  top: 35px;
+  top: 0px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
+  border-top: 0px solid #d7dce1;
   border-left: 3px solid #d7dce1;
   transition: all 0.5s ease 0s;
   z-index: 9994;
@@ -678,8 +678,8 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
+  top: 0px;
+  left: 0px;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
@@ -1076,7 +1076,7 @@ section {
 }
 
 .portfolio-details .portfolio-info {
-  padding-top: 45px;
+  padding-top: 0px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1102,7 +1102,7 @@ section {
 
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 
