@@ -1,5 +1,5 @@
 /**
-* Template Name: MyResume - v2.0.0
+* Template Name: MyResume - v2.1.0
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -612,9 +612,9 @@ section {
   width: 48px;
   height: 48px;
   position: absolute;
-  top: 0px;
+  top: 35px;
   left: 35px;
-  border-top: 0px solid #d7dce1;
+  border-top: 3px solid #d7dce1;
   border-left: 3px solid #d7dce1;
   transition: all 0.5s ease 0s;
   z-index: 9994;
@@ -678,8 +678,8 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 0px;
-  left: 0px;
+  top: 15px;
+  left: 15px;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
@@ -965,9 +965,13 @@ section {
   display: none;
   color: #fff;
   background: #ed3c0d;
-  text-align: center;
+  text-align: left;
   padding: 15px;
   font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
 }
 
 .contact .php-email-form .sent-message {
@@ -1076,7 +1080,7 @@ section {
 }
 
 .portfolio-details .portfolio-info {
-  padding-top: 0px;
+  padding-top: 45px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1102,7 +1106,7 @@ section {
 
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
-    padding-top: 0px;
+    padding-top: 20px;
   }
 }
 
