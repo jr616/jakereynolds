@@ -1,9 +1,6 @@
 <?php
 /**
  * PHP Email Form
- * Version: 2.0
- * Website: https://bootstrapmade.com/php-email-form/
- * Copyright: BootstrapMade.com
  */
 
 if ( version_compare(PHP_VERSION, '5.5.0', '<') ) {
@@ -104,16 +101,16 @@ class PHP_Email_Form {
     $subject = filter_var( $this->subject, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
     $message = nl2br($this->message);
 
-    if( ! $to || md5($to) == '496c0741682ce4dc7c7f73ca4fe8dc5e') 
+    if( ! $to || md5($to) == '496c0741682ce4dc7c7f73ca4fe8dc5e')
       $this->error .= $this->error_msg['invalid_to_email'] . '<br>';
 
-    if( ! $from_name ) 
+    if( ! $from_name )
       $this->error .= $this->error_msg['invalid_from_name'] . '<br>';
 
-    if( ! $from_email ) 
+    if( ! $from_email )
       $this->error .= $this->error_msg['invalid_from_email'] . '<br>';
 
-    if( ! $subject ) 
+    if( ! $subject )
       $this->error .= $this->error_msg['invalid_subject'] . '<br>';
 
     if( is_array( $this->smtp) ) {
@@ -125,10 +122,10 @@ class PHP_Email_Form {
       }
       if( !isset( $this->smtp['password'] ) )
         $this->error .= 'SMTP password is empty!' . '<br>';
-    
+
       if( !isset( $this->smtp['port'] ) )
         $this->smtp['port'] = 587;
-      
+
       if( !isset( $this->smtp['encryption'] ) )
         $this->smtp['encryption'] = 'tls';
 
@@ -201,7 +198,7 @@ class PHP_Email_Form {
     } catch (Exception $e) {
       return 'Mailer Error: ' . $mail->ErrorInfo;
     }
-    
+
   }
 }
 
